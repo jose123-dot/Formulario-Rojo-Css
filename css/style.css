@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgba(249, 249, 249, 0.5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* caracteristicas de la caja contenedora */
+.container {
+  display: flex;
+  width: 700px;
+  height: 450px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+/* alineando el texto en el centro */
+.form {
+  display: block;
+  padding-top: 15px;
+  text-align: center;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+/* Configurar el titulo del formulario como colores, size etc
+*/
+.title {
+  font-size: 20pt;
+  color: rgb(223, 39, 39);
+}
+/* configurar el subtitulo */
+.subtitle,
+.check {
+  font-size: 10pt;
+  font-weight: normal;
+}
+
+i {
+  border: 1px solid;
+  border-radius: 100%;
+  color: rgb(88, 90, 90);
+}
+.title,
+.social,
+.subtitle {
+  padding-bottom: 5px;
+  text-align: center;
+}
+.textbox {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(230, 224, 224);
+  border-radius: 5px;
+  background-color: rgba(226, 224, 224, 0.2);
+  padding: 10px;
+}
+/* aplicar color a los enlaces */
+a {
+  text-decoration: none;
+  color: rgb(236, 98, 98);
+}
+.check {
+  padding-top: 5px;
+}
+/* design del boton principal */
+.button {
+  width: 120px;
+  height: 35px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: rgb(223, 39, 39);
+}
+/* boton invisible */
+.button__ghot__red {
+  background-color: transparent;
+  color: rgb(223, 39, 39);
+  border: 1px solid rgb(223, 39, 39);
+}
+.check input {
+  display: none;
+}
+.check input + label:before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 4px;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid red;
+  vertical-align: middle;
+  margin-right: 4px;
+  margin-bottom: 3px;
+}
+.check input:checked + label:before {
+  background: rgb(223, 39, 39);
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+}
+/* configurando la imagen */
+.img {
+  width: 300px;
+  height: 450px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
